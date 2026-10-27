@@ -18,8 +18,8 @@
       "sha256": "50556c7988a65593ee67b840fd53a9e845ab791f4028593b0e13f464b6022883"
     },
     "index.html": {
-      "bytes": 36618,
-      "sha256": "306aa24899cb110272a986983e6760ca76434c8307026528dd316f204081f660"
+      "bytes": 36620,
+      "sha256": "d7b5db3cf58bcb8ecca0939a5b8ec3028bc7cbecaa9d0735badac9d297741e1b"
     },
     "src/insight-engine.mjs": {
       "bytes": 8209,
@@ -106,8 +106,8 @@
       "sha256": "56630a720ff2a6bc81b51280dfe86e366e056e24dec6591509f9918e09d67e0c"
     },
     "home.css": {
-      "bytes": 18020,
-      "sha256": "6020400a2136c9b2d18a5540080d78f0e7c4b9bc7fd3292ebc4366c876fb5941"
+      "bytes": 18585,
+      "sha256": "8b926e4056559424838f379c9eaa2671262ce0aadbda1ed7a6cb3dacbbe4e46a"
     },
     "src/cloud-ui.mjs": {
       "bytes": 4852,
@@ -124,6 +124,14 @@
     "assets/premier-league-ball.png": {
       "bytes": 282878,
       "sha256": "dd9f8bf84ee22d73713fe4a29e8e49e1d16dc08e864b0a298e1551f489d8718c"
+    },
+    "assets/matchlens-trailer.mp4": {
+      "bytes": 4332051,
+      "sha256": "8297143945bce3fd4ca13528197038b19136c17d79b50aa480353f752cf23260"
+    },
+    "assets/matchlens-trailer-poster.jpg": {
+      "bytes": 47564,
+      "sha256": "7cabeece7cef94cfee8845d8f1899eb759d1814beb16b09a003070bf205d113e"
     },
     "data/matches/2499719.json": {
       "bytes": 425363,

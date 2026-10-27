@@ -13,3 +13,5 @@ body[data-workspace-view="home"] .ml-workspace{margin:0;padding:0;max-width:none
 
 @media(max-width:700px){.home-hero h1{font-size:54px;letter-spacing:-3px}}
 @media(max-width:360px){.home-hero h1{font-size:44px;letter-spacing:-2.5px}}
+
+.home-trailer-player{aspect-ratio:auto;background:#f1edf5;isolation:auto}.home-trailer-player video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#20112f}.home-trailer-player figcaption{position:static;inset:auto;padding:14px 18px;font-size:9px;line-height:1.5;letter-spacing:1px;color:#79638c;gap:16px}.home-trailer-player figcaption>span:first-child{color:#65447f}.home-trailer-player figcaption a{font-weight:650;white-space:nowrap}@media(max-width:700px){.home-trailer-player figcaption{font-size:7px;padding:12px;gap:10px;flex-wrap:wrap}}

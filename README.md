@@ -19,7 +19,7 @@ Open http://127.0.0.1:4317/. The default route is the project home; `#overview` 
 
 ## What works today
 
-- A responsive presentation home with a clearly labelled 16:9 trailer placeholder.
+- A responsive presentation home with the supplied 10-second cinematic teaser and native video controls.
 - Fan / Analyst perspectives sharing the same underlying facts.
 - 131 selected historical Premier League 2017/18 and World Cup 2018 matches, with 216,058 recorded events.
 - Event exploration, shot maps, research xG / xPass estimates, contributions, local statistical questions, reports and a browser-local notebook.
