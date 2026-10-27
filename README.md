@@ -22,13 +22,13 @@ Open http://127.0.0.1:4317/. The default route is the project home; `#overview` 
 - 131 selected historical Premier League 2017/18 and World Cup 2018 matches, with 216,058 recorded events.
 - Event exploration, shot maps, research xG / xPass estimates, contributions, local statistical questions, reports and a browser-local notebook.
 - A separate synthetic Replay Lab with player viewpoints, layers and authored decision alternatives.
-- 101 automated checks for the existing football engine, models and data behaviour.
+- 109 automated checks for the existing football engine, models and data behaviour.
 
 Historical event positions are not continuous tracking. Replay scenarios are fictional and do not reconstruct the historical matches. Models are independent research estimates, with documented evaluation and limits in the Models & data view.
 
 ## AI and Microsoft status
 
-**No generative model, Microsoft cloud resource or live football feed is connected in this version.** Current question answers use local calculations and retrieval. Microsoft Foundry, Azure Functions, Storage, optional AI Search and agent orchestration are planned integrations; see [MICROSOFT.md](MICROSOFT.md). The synthetic decision lab should form the basis of any synthetic-event hackathon demonstration.
+**Microsoft AI explanations are connected in the configured demo.** A deployed Azure Functions API sends recalculated evidence to Microsoft Foundry using a managed identity. The shared allowance is 250 inference attempts; at exhaustion a dialog offers an extension request to contact@avatarz.com. Cached explanations remain accessible. The default static app also works without cloud access. Details and limitations: [MICROSOFT.md](MICROSOFT.md), [connector guide](azure-api/README.md). No live football feed is connected. The synthetic decision lab should form the basis of any synthetic-event hackathon demonstration.
 
 ## Build and share
 

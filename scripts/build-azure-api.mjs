@@ -1,0 +1,10 @@
+import{readFile,writeFile,mkdir,cp}from'node:fs/promises';import{fileURLToPath}from'node:url';import path from'node:path';
+const root=fileURLToPath(new URL('..',import.meta.url)),out=path.join(root,'.azure-dist');
+await mkdir(out,{recursive:true});
+for(const dir of ['src','data','azure-api'])await cp(path.join(root,dir),path.join(out,dir),{recursive:true,filter:s=>!s.includes('node_modules')&&!s.endsWith('local.settings.json')});
+const config=JSON.parse(await readFile(path.join(root,'azure-api/package.json'),'utf8'));
+await writeFile(path.join(out,'package.json'),JSON.stringify({...config,main:'azure-api/main.mjs'},null,2)+'\n');
+await cp(path.join(root,'azure-api/package-lock.json'),path.join(out,'package-lock.json'));
+await cp(path.join(root,'SOURCES.md'),path.join(out,'SOURCES.md'));
+await writeFile(path.join(out,'host.json'),JSON.stringify({version:'2.0',functionTimeout:'00:00:45',logging:{logLevel:{default:'Warning','Function.insight.User':'Information'},applicationInsights:{samplingSettings:{isEnabled:true,maxTelemetryItemsPerSecond:1}}}},null,2)+'\n');
+console.log('Prepared Azure Functions source in '+out+'. Install production dependencies there before packaging. No deployment performed.');

@@ -11,3 +11,6 @@ work/
 evidence/
 __pycache__/
 *.py[cod]
+.azure-dist/
+local.settings.json
+.azure-dist.zip

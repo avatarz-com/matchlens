@@ -98,3 +98,5 @@ document.addEventListener('visibilitychange',()=>{if(document.hidden&&state.play
 
 export function pauseReplay(){if(state.playing)dispatch({type:'play'});}
 export function setReplayAudience(value){audience=value==='analyst'?'analyst':'fan';updateUI();}
+
+export function getReplayCloudContext(pause=true){if(pause)pauseReplay();return{source:'synthetic',momentId,receiver:state.selected,timeMs:Math.round(state.timeMs)};}

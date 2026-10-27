@@ -14,12 +14,12 @@
       "sha256": "b3259609620bfa5c057600a23b5b578be268b52fcd0e589984f8842f8c55f6d5"
     },
     "workspace.css": {
-      "bytes": 45699,
-      "sha256": "fd0ecd57fafffd2746e8ea990051012d9608d0166c1d34718f885f74bb1bd1de"
+      "bytes": 47433,
+      "sha256": "50556c7988a65593ee67b840fd53a9e845ab791f4028593b0e13f464b6022883"
     },
     "index.html": {
-      "bytes": 36313,
-      "sha256": "c92f800f7ecff4a707d17d05ca1d49aa76f1ed47330a9eba9428488333146cf1"
+      "bytes": 36618,
+      "sha256": "306aa24899cb110272a986983e6760ca76434c8307026528dd316f204081f660"
     },
     "src/insight-engine.mjs": {
       "bytes": 8209,
@@ -30,12 +30,12 @@
       "sha256": "7cf8a84309a9d1d09c32de2eabb98c95402241250c69c882fcab3fa3dfd58f11"
     },
     "tool-app.mjs": {
-      "bytes": 40272,
-      "sha256": "d7cdb5a619b657612aa50188375a64f74a448d9ac30dd902aaf13188adea288e"
+      "bytes": 40745,
+      "sha256": "1f034f07726c8148dfed70a62e6a2f39c19f60b9af05b2fb97eff93a1071c99b"
     },
     "app.mjs": {
-      "bytes": 21837,
-      "sha256": "f8f70869b1dff93cca845138bbfe0f713109474a5486ad2d2b575745e261cfa3"
+      "bytes": 22005,
+      "sha256": "405ff88e483b776fc86b31368231ab6db695271c123ca9b116b619b1fb069f0d"
     },
     "styles.css": {
       "bytes": 50244,
@@ -104,6 +104,22 @@
     "assets/premier-league.svg": {
       "bytes": 5902,
       "sha256": "56630a720ff2a6bc81b51280dfe86e366e056e24dec6591509f9918e09d67e0c"
+    },
+    "home.css": {
+      "bytes": 18020,
+      "sha256": "6020400a2136c9b2d18a5540080d78f0e7c4b9bc7fd3292ebc4366c876fb5941"
+    },
+    "src/cloud-ui.mjs": {
+      "bytes": 4785,
+      "sha256": "f05303866047b015d4884df616cdefa9165b29b4997e583d759431e7e3c16672"
+    },
+    "src/demo-access.mjs": {
+      "bytes": 3151,
+      "sha256": "f7e11b7bf01949f33d15a43f09b5f9f9da820205570c5a72ee0460f3bc63e6c1"
+    },
+    "assets/premier-league-ball.png": {
+      "bytes": 282878,
+      "sha256": "dd9f8bf84ee22d73713fe4a29e8e49e1d16dc08e864b0a298e1551f489d8718c"
     },
     "data/matches/2499719.json": {
       "bytes": 425363,
@@ -628,14 +644,6 @@
     "data/matches/2058016.json": {
       "bytes": 403581,
       "sha256": "dc9b0fe19fb25d4991a86e344a185836b8bf0fea8550d7318dd3ecd5bfd3114e"
-    },
-    "home.css": {
-      "bytes": 18020,
-      "sha256": "6020400a2136c9b2d18a5540080d78f0e7c4b9bc7fd3292ebc4366c876fb5941"
-    },
-    "assets/premier-league-ball.png": {
-      "bytes": 282878,
-      "sha256": "dd9f8bf84ee22d73713fe4a29e8e49e1d16dc08e864b0a298e1551f489d8718c"
     }
   }
 }
