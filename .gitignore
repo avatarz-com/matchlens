@@ -9,3 +9,5 @@ dist/
 .vscode/
 work/
 evidence/
+__pycache__/
+*.py[cod]

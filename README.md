@@ -40,6 +40,10 @@ The verified public files are copied to `dist/`. Deploy that directory to a stat
 
 After intentionally editing a public asset, run `npm run prepare:preview`, then rerun tests and build; the public manifest records file sizes and SHA256 checksums. Internal notes, credentials, exports and browser sessions are not public assets.
 
+## Optional model training
+
+The checked-in models and processed data are sufficient to run the app. `scripts/train-demo-models.mjs` regenerates the synthetic demonstration model. `scripts/train-historical-models.py` downloads the pinned public source and trains the historical research models; it additionally requires Python, NumPy, SciPy, scikit-learn and curl. Training rewrites model/data files, so run it only when intentionally retraining, then refresh the public manifest and rerun checks.
+
 ## Data and brand attribution
 
 Historical data is from Wyscout / Pappalardo and Massucco, distributed under CC BY 4.0; processing and independent research models are described in [SOURCES.md](SOURCES.md). Original Microsoft, Premier League and PUMA assets retain their respective rights; their presentation use is based on the project owner's stated authorization, described in [BRANDING.md](BRANDING.md). No official endorsement is claimed. No blanket open-source licence is granted over third-party marks, images or the AVATARZ code by the presence of this public repository.
