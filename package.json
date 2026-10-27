@@ -1,0 +1,16 @@
+{
+  "name": "matchlens",
+  "version": "0.7.0",
+  "private": true,
+  "type": "module",
+  "description": "Football intelligence for fans and analysts, by AVATARZ",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/*.mjs",
+    "prepare:preview": "node scripts/prepare-preview.mjs",
+    "build": "node scripts/build-static.mjs"
+  }
+}
