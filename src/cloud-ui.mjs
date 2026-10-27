@@ -1,8 +1,9 @@
+import{CLOUD_API_BASE}from'./cloud-api.mjs';
 import{showDemoAccessNotice}from'./demo-access.mjs';
 // Optional cloud enhancement. No model request occurs until the user clicks.
 export async function initCloudUI(getRequest){
  const access=document.getElementById('demo-access-open');if(access)access.onclick=()=>{document.getElementById('about-dialog')?.close();showDemoAccessNotice();};
- let health;try{const r=await fetch('/api/health',{signal:AbortSignal.timeout(12000)});if(!r.ok)return;health=await r.json();if(health.enabled!==true)return;}catch{return;}
+ let health;try{const r=await fetch(CLOUD_API_BASE+'/health',{signal:AbortSignal.timeout(12000)});if(!r.ok)return;health=await r.json();if(health.enabled!==true)return;}catch{return;}
  document.getElementById('home-cloud-status')?.replaceChildren(document.createTextNode('CONNECTED DEMO'));
  document.getElementById('home-cloud-note')?.replaceChildren(document.createTextNode('Foundry + Functions + private Storage · Connected for this demo. AI Search and additional agent workflows remain future extensions.'));
  document.getElementById('about-cloud-status')?.replaceChildren(document.createTextNode('Connected demo'));
@@ -20,7 +21,7 @@ export async function initCloudUI(getRequest){
    let request;try{request=getRequest(source);if(!request)throw new Error(source==='historical'?'Ask a supported question about a bundled historical match first.':'Open a synthetic replay scene first.');}catch(e){result.textContent=e.message;return;}
    const identity=JSON.stringify(request);button.disabled=true;result.textContent='Finding the evidence and preparing an explanation…';
    try{
-    const r=await fetch('/api/insight',{method:'POST',headers:{'Content-Type':'application/json'},body:identity,signal:AbortSignal.timeout(45000)}),data=await r.json();
+    const r=await fetch(CLOUD_API_BASE+'/insight',{method:'POST',headers:{'Content-Type':'application/json'},body:identity,signal:AbortSignal.timeout(45000)}),data=await r.json();
     const current=getRequest(source,false);if(!current||JSON.stringify(current)!==identity){result.textContent='The selection changed. Request a new explanation for the current view.';return;}
     if(data.code==='demo_allowance_exhausted')showDemoAccessNotice({exhausted:true});
     if(!data.narrative)throw new Error(data.error??'The cloud explanation is temporarily unavailable.');

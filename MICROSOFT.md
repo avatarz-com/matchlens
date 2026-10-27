@@ -22,7 +22,11 @@ A second conservative USD 5 model-planning envelope reserves estimated maximum u
 
 One Microsoft account and one active Azure subscription cover the deployed Microsoft services; separate Microsoft 365, Fabric or Power BI subscriptions are not needed for this demo. The public source is at [avatarz-com/matchlens](https://github.com/avatarz-com/matchlens).
 
-The frontend can be hosted on Netlify. Build with `MATCHLENS_AZURE_API_BASE=https://YOUR_FUNCTION.azurewebsites.net/api npm run build` to generate a same-origin Netlify API proxy. The default build remains usable without a cloud account; AI controls appear only when a configured API responds as enabled. No public frontend deployment is claimed here.
+The frontend is configured for Azure Static Web Apps Free at https://mango-river-0b301f40f.4.azurestaticapps.net/. The public repository has a production deployment workflow. The site calls the existing Azure API using a narrowly allowed origin; no Standard-plan linked backend is required. The static-site management region is East US 2 because West Europe was not accepting new customers; the existing API and storage remain in North Europe, and Foundry remains in North Central US.
+
+For another Azure deployment, build with `MATCHLENS_DEPLOY_TARGET=azure MATCHLENS_AZURE_API_BASE=https://YOUR_FUNCTION.azurewebsites.net/api npm run build` and allow that exact site origin in the Function platform CORS and application origin list. The build emits `staticwebapp.config.json` with explicit module MIME types, an API-specific CSP and a public endpoint module containing no credentials.
+
+Netlify remains an optional hosting target. Build with `MATCHLENS_AZURE_API_BASE=https://YOUR_FUNCTION.azurewebsites.net/api npm run build` to generate a same-origin Netlify API proxy. The default build remains usable without a cloud account; AI controls appear only when a configured API responds as enabled. The Azure workflow verifies the same tests before publishing; no model key or Azure management credential is committed to the repository. A site-only deployment token is stored as an encrypted GitHub secret.
 
 See [the connector guide](azure-api/README.md) for deployment and verification. Actual Microsoft usage does not itself guarantee competition eligibility or an award.
 

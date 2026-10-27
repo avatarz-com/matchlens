@@ -110,8 +110,12 @@
       "sha256": "6020400a2136c9b2d18a5540080d78f0e7c4b9bc7fd3292ebc4366c876fb5941"
     },
     "src/cloud-ui.mjs": {
-      "bytes": 4785,
-      "sha256": "f05303866047b015d4884df616cdefa9165b29b4997e583d759431e7e3c16672"
+      "bytes": 4852,
+      "sha256": "2d4cea0f7099352054e7dda0e3287aa9538dc78fc4b27b6907f9fc9cbc4366f5"
+    },
+    "src/cloud-api.mjs": {
+      "bytes": 116,
+      "sha256": "f91e5f251d2f7e0921af7f7870490330e9359610ee874dd50570c4fc3efbe2b3"
     },
     "src/demo-access.mjs": {
       "bytes": 3151,

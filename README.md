@@ -4,6 +4,8 @@
 
 An independent AVATARZ football intelligence prototype with two perspectives on the same match facts: Fan and Analyst.
 
+Public demo: [Open MatchLens](https://mango-river-0b301f40f.4.azurestaticapps.net/). The site is hosted on Azure Static Web Apps Free and deployed from the `main` branch after verification.
+
 ## Run locally
 
 Requires Node.js 22 or later. No runtime package dependencies or API keys are needed.
@@ -22,7 +24,7 @@ Open http://127.0.0.1:4317/. The default route is the project home; `#overview` 
 - 131 selected historical Premier League 2017/18 and World Cup 2018 matches, with 216,058 recorded events.
 - Event exploration, shot maps, research xG / xPass estimates, contributions, local statistical questions, reports and a browser-local notebook.
 - A separate synthetic Replay Lab with player viewpoints, layers and authored decision alternatives.
-- 109 automated checks for the existing football engine, models and data behaviour.
+- 112 automated checks for the existing football engine, models and data behaviour.
 
 Historical event positions are not continuous tracking. Replay scenarios are fictional and do not reconstruct the historical matches. Models are independent research estimates, with documented evaluation and limits in the Models & data view.
 
